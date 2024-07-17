@@ -40,6 +40,7 @@ public class IntListTest {
      * Anything can happen to A.
      */
 
+
     @Test
     public void testSquareListRecursive() {
         IntList L = IntList.of(1, 2, 3);
