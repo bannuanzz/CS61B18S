@@ -107,12 +107,12 @@ public class IntList {
         IntList ptr = result;
         A = A.rest;
         while (A != null) {
-            ptr.rest = (A.first, null);
+            ptr.rest = new IntList(A.first, null)
             ptr = ptr.rest;
             A = A.rest;
         }
         while (B != null) {
-            ptr.rest = (B.first, null);
+            ptr.rest = new IntList(B.first, null);
             ptr = ptr.rest;
             B = B.rest;
         }
