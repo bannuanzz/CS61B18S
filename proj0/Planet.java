@@ -44,14 +44,14 @@ public class Planet {
     public double calcForceExertedByX(Planet p) {
         double f = calcForceExertedBy(p);
         double distance = calcDistance(p);
-        double disX = this.xxPos - p.xxPos;
+        double disX = p.xxPos - this.xxPos;
         return disX * f / distance;
     }
 
     public double calcForceExertedByY(Planet p) {
         double f = calcForceExertedBy(p);
         double distance = calcDistance(p);
-        double disY = this.yyPos - p.yyPos;
+        double disY = p.yyPos - this.yyPos;
         return disY * f / distance;
     }
 
