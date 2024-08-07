@@ -31,14 +31,14 @@ public class NBody {
         Planet[] p = readPlanets(filename);
         double radius = readRadius(filename);
         StdDraw.enableDoubleBuffering();
-        StdDraw.setScale(-dt, dt);
+        StdDraw.setScale(-radius, radius);
         double time = 0;
         while (time <= T) {
             double[] xForces = new double[p.length];
             double[] yForces = new double[p.length];
             for (int i = 0; i < p.length; i++) {
 
-                xForces[i] = p[i].calcNetForceExertedByY(p);
+                xForces[i] = p[i].calcNetForceExertedByX(p);
                 yForces[i] = p[i].calcNetForceExertedByY(p);
             }
             for (int i = 0; i < p.length; i++) {
