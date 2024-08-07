@@ -52,11 +52,11 @@ public class NBody {
             StdDraw.show();
             StdDraw.pause(10);
             time += dt;
-            StdOut.printf("%d\n", p.length);
-            StdOut.printf("%.2e\n", radius);
 
 
         }
+        StdOut.printf("%d\n", p.length);
+        StdOut.printf("%.2e\n", radius);
         for (Planet planet : p) {
             StdOut.printf("%11.4e %11.4e %11.4e %11.4e %11.4e %12s\n", planet.xxPos, planet.yyPos, planet.xxVel, planet.yyVel, planet.mass, planet.imgFileName);
         }
