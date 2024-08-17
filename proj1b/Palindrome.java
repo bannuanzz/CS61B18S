@@ -1,5 +1,5 @@
 public class Palindrome {
-    public boolean isPalindrome
+
 
     public LinkedListDeque<Character> wordToDeque(String word) {
         LinkedListDeque<Character> d = new LinkedListDeque<>();
