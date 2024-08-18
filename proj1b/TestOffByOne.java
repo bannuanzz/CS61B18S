@@ -1,6 +1,5 @@
 import org.junit.Test;
 
-import java.security.PublicKey;
 
 import static org.junit.Assert.*;
 
@@ -10,12 +9,10 @@ public class TestOffByOne {
     static CharacterComparator offByOne = new OffByOne();
 
     @Test
-    public void TestequalChars() {
+    public void testequalChars() {
         assertTrue(offByOne.equalChars('B', 'B'));
         assertFalse(offByOne.equalChars('A', 'a'));
-
     }
-
     // Your tests go here.
 //    Uncomment this class once you've created your CharacterComparator interface and OffByOne class.
 }

@@ -19,11 +19,11 @@ public class TestPalindrome {
 
 
     @Test
-    public void TestPalindrome() {
+    public void testisPalindrome() {
         CharacterComparator cc = new OffByOne();
         assertFalse(palindrome.isPalindrome("cat", cc));
         assertFalse(palindrome.isPalindrome("Aba", cc));
-        assertTrue(palindrome.isPalindrome("racecar", cc));
+        assertFalse(palindrome.isPalindrome("racecar", cc));
 
     }
 }
